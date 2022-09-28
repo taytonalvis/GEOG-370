@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projections</title>
+</head>
+<body>
+    <h1>Various Projections and their effects on Map Data - Tayton Alvis</h1>
+    <p>The following projections were displayed using the natural earth vector dataset as a base. After uploading the dataset to QGIS, the projection could be changed in settings, where there were a wide range of projections to choose from. After selecting each projection, I added tissot circles to demonstrate the distortion that occurs across the map. All of the following projections are ways to represent the 3-dimensional surface of the earth in a 2D manner, each in a different interpretation.There is no "silver bullet" when it comes to choosing a projection, but some projections are undoubtedly better than others in certain situations. </p>
+    
+    <h2>WGS84 Projection</h2>
+    <h3>This model is fairly effective at displaying earth near the equator, but has a bit of distortion at the poles. It would be well suited to mapping near the equator. </h3>
+    <a href="projections/4326.png">
+    <img src="projections/4326.png" alt="WGS84" width='500px'>
+    </a>
+    <h2>Pseudo-Mercator Projection</h2>
+    <h3>This projection does a good job of preserving shape, but is limited in its portrayal of size. Issues are most prominent when observing the poles, with Greenland looking to be nearly the size of Africa. Where this projection shines is its preservation of direction, and it was often used as an effective navigational tool.</h3>
+    <a href="projections/3857.png">
+    <img src="projections/3857.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>North Pole Azimuthial Equidistant Projection</h2>
+    <h3>This projection is effective at displaying the shape of countries near the North Pole, but there is a large degree of size and shape distortion as you travel out from the north pole. It is especially confusing when observing Antartica. This projection would be well suited to mapping the Arctic. </h3>
+    <a href="projections/102016.png">
+    <img src="projections/102016.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Eckert Projection</h2>
+    <h3>This projection is a good compromise between preservation of size and shape. There is a degree of shape distortion as you travel east and west of the equator, mostly concrentrated along the equator due to the projection's rigid geometry. Overall, this projection is fairly effective at preserving size and shape of all countries.</h3>
+    <a href="projections/53015.png">
+    <img src="projections/53015.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>World Winkle Projection</h2>
+    <h3>Similarly to the Eckert projection, this projection compromises between slight shape and size distortion in order to preserve relative size and shape of all countries. Distortion is a bit smoother due to the more rounded curvature of the projection, making it a suitable projection for many world maps. </h3>
+    <a href="projections/53018.png">
+    <img src="projections/53018.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>World Bonne Projection</h2>
+    <h3>This projection is effective at representing the curvature of the earth, does so at the expense of shape and size particularly evident near projection margins. This map would likely be best suited to aesthetic maps focused on showing earth's curvature. </h3>
+    <a href="projections/54024.png">
+    <img src="projections/54024.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Conic Equidistant Projection</h2>
+    <h3>This projection is effective at portraying size and distance near the north pole, but suffers large degree of distortion as you move south. Cardinal directions are also not preserved in this projection due to its conic nature. </h3>
+    <a href="projections/54027.png">
+    <img src="projections/54027.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Cylindrical equal area projection</h2>
+    <h3>This projection correctly displays direction at the expense of size and shape, particularly at the poles. This projection should not be used when preservation of shape is necessary.
+
+    </h3>
+    <a href="projections/54034.png">
+    <img src="projections/54034.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Aitoff Projection</h2>
+    <h3>This projection presents shape, direction and size fairly accurately while representing the curvature of the earth. Some size, shape, and directional warp occur due to the emphasis on curvature, but the distortion is fairly minimal. The most misleading part of this projection is probably the poles, which are squeezed and make the land masses present there look very close together. </h3>
+    <a href="projections/54043.png">
+    <img src="projections/54043.png" alt="Aitoff" width='500px'>
+    </a>
+    <h2>Data used for this project</h2>
+    <a href="https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries.zip"> Download Natrual Earth 1:10m Cultural Vector </a>
+</body>
+</html>
