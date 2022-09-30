@@ -6,33 +6,32 @@
     <title>Homework 6</title>
 </head>
 <body>
-<h1>Homework 6: Census data choropleth </h1>
+<h1>Homework 6.2: Ratio chloropleths of differing classification </h1>
 <h2>Tayton Alvis</h2>
-<h1>Homework 6: Census data choropleth </h1>
-
-<h1>Homework 6: Census data choropleth </h1>
-<h3> </h3>
+<h3>The following chloropleths were made using a ratio of people 75 or older in the workforce vs. total working population. Darker counties have a larger portion of workers 75 or older. Counties that were not surveyed are represented in yellow in order to preserve state shape.  </h3>
+<h1>Natural Breaks Chloropleth </h1>
+<h3>The natural breaks classification scheme breaks the data into groups based on their numbers in relation to one another. This makes for a scheme in which similar value counties are grouped in the same break, and is therefore fairly accurate from a visual standpoint.  </h3>
 <!-- Your map goes here -->
-<a href="MIcloropleth.png">
-    <img src="MIcloropleth.png" alt="MI employment chloropleth" width='500px'>
+<a href="rationat.png">
+    <img src="rationat.png" alt="natural breaks" width='500px'>
     </a>
-    <h1>Homework 6: Census data choropleth </h1>
-    <h3> </h3>
+    <h1>Equal Interval Chloropleth </h1>
+    <h3>This Chloropleth breaks the county data into equal interval groups, which can be fairly accurate. However, it can sometimes give the appearance of a more well distributed dataset than is occurring in actuality.</h3>
 <!-- Your map goes here -->
-<a href="MIcloropleth.png">
-    <img src="MIcloropleth.png" alt="MI employment chloropleth" width='500px'>
+<a href="ratioeq.png">
+    <img src="ratioeq.png" alt="Equal Intervals" width='500px'>
     </a>
-    <h1>Homework 6: Census data choropleth </h1>
-    <h3> </h3>
+    <h1>Quantile Chloropleth</h1>
+    <h3>This chloropleth breaks the data into quantiles based on number of points, where the first group of points will be designated the lightest color, ect. This setup is good for evenly distributed data, but will not account for steep differences such as outliers. For example, if the last 3 numbers in a dataset were 45, 46, and 174, they would all be assigned the same color despite the number 174 being much greater in value.  </h3>
 <!-- Your map goes here -->
-<a href="MIcloropleth.png">
-    <img src="MIcloropleth.png" alt="MI employment chloropleth" width='500px'>
+<a href="ratioquan.png">
+    <img src="ratioquan.png" alt="Quantiles" width='500px'>
     </a>
 
 
 <!-- Link to your shapefile in Github and you CSV -->
 <h2>Data used for this project</h2>
-    <a href="MIEmploymentdata_cleaned.csv"> CSV dataset </a>
+    <a href="ACSST1Y2021.S2301-Datacleanedratio.csv"> CSV dataset </a>
     <p></p>
     <a href="MiCounties.geojson"> Link to shapefile </a>
 
